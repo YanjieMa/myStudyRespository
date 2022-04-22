@@ -1,0 +1,36 @@
+//gdb调试教程
+设置主程序参数			set args val1 val2 val3...
+设置断点：			b 行号
+开始运行，到断点停止		r
+执行当前语句，不进入函数	n
+执行当前语句，进入函数		s		//库函数进不去
+显示变量的值			p 变量		//可以加表达式
+继续运行，直到下个断点		c
+设置变量的值			set var para=n
+查看设置的断点			info b
+
+查看系统参数			ulimit -a
+把core文件大小设置为无限	ulimit -c unlimit
+调试core文件			gdb main core.13647
+查看函数的调用栈		bt
+
+调试正在运行中的程序		gdb main -p 进程编号	//进入调试程序停止运行，退出后程序继续执行
+
+//多进程
+//切换父子进程
+查看当前运行的进程	ps aux | grep main
+调试父进程		set follow-fork-mode parent	(缺省是父进程)
+调试子进程		set follow-fork-mode child	
+
+设置调试模式		set detach-on-fork on/off (缺省是on)	on:调试当前进程，其他进程继续执行；off:调试当前进程，其他进程暂停执行
+查看调试的进程		info inferiors
+切换当前调试的进程	inferior 进程id(gdb内的id)
+
+//多线程
+查看当前运行的线程	ps -aL | grep main
+查看主线程和新线程的关系	pstree -p 主线程id
+查看线程		info threads
+切换线程		thread 线程id(gdb内的id)
+设置调试模式		set scheduler-locking	on/off		on:只运行当前线程；off:运行全部线程
+指定某线程执行gdb命令	thread apply 线程id(gdb内id) cmd
+全部线程执行gdb命令	thread apply all cmd

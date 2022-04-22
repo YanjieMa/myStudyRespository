@@ -1,0 +1,68 @@
+1.	strlen(const char *str);		计算字符串str长度，直到空字符串\0，返回字符串长度（不包括空字符串\0）
+2.	sizeof();						返回所占空间大小；编译时计算，不能获得动态分配内存的大小。
+3.	memcpy(void *dst,const void *src,size_t n);	从src复制n个字节到dst	
+4.	strcpy(char *dst,const char *src);			把src指向的字符串复制到dst，一直复制，直到遇见\0
+5.	strncpy(char *dst,const char *src,size_t n);把src指向的字符串复制到dst,最多复制n个，不满则其余用\0填充
+6.	sprintf(char *dst,const char *format,...);	格式化输出到str指向的字符串，不包扩字符串末尾的空字符\0
+7.	snprintf(char *dst,size_t size,format...); 
+	 (1) 如果格式化后的字符串长度小于等于 size，则会把字符串全部复制到 str 中，并给其后添加一个字符串结束符 \0；
+	 (2) 如果格式化后的字符串长度大于 size，超过 size 的部分会被截断，只将其中的 (size-1) 个字符复制到 str 中，并给其后添加一个字符串结束符 \0，
+		返回值为欲写入的字符串长度。
+
+
+	// FILE * fopen(char *pathname, *type);
+	// 成功返回文件流指针，失败返回空指针NULL
+	// type : r w a r+ w+ a+ b t
+
+	//int fread(void *buf,int size,int count,FILE *stream);	读取count个字段，每个字段size个字节
+	//int fwrite(void *buf,int size,int count,FILE *stream);
+	//int fprintf(FILE *stream,char *format, ...);	成功返回写入的字节数 失败返回负值
+	//int fputs(char *string,FILE *stream);		返回0表示成功 非0失败
+	//int fputc(int ch,FILE *stream);		成功返回ch,失败返回EOF
+	//int fscanf(FILE *stream,char *format, ...);	错误返回EOF,否则成功
+	//char fgets(char *string,int n,FILE *stream);	读取至多n-1个，字符串末尾加入空字符\0，成功返回string指针，失败返回空指针NULL
+	//int fgetc(FILE *stream);			读错返回EOF，成功返回当前位置的一个字符
+	//int fseek(FILE *stream,long off_set,int fromwhere);	返回0成功，非0失败。SEEK_SET SEEK_CUR SEEK_END
+	//long ftell(FILE *stream);	返回文件位置
+	//int fflush(FILE *stream);
+	//int feof(FILE *stream);	判断是否到达文件结尾，到达返回非0值，未到达返回0
+
+	// int fclose(FILE *stream)
+
+
+	// int open(const char *pathname,int flags);
+	// int open(const char *pathname,int flags, mode_t mode);
+	//	成功：返回文件描述符fd	失败：返回-1 设置errno
+	//	flags:O_RDONLY O_WRONLY O_RDWR O_TRUNC O_EXCL O_NONBLOCK O_CREATE O_APPEND
+	//	mode:文件权限=mode & ~mask	such as:0644
+	//ssize_t read(int fd,void *buf,size_t count);
+	//	返回值 0:读到文件末尾  >0:读到的字节数  -1:失败，errno=EAGIN或者EWOULDBLOCK说明以非阻塞方式读，并且无数据
+	//	count:缓冲区大小 
+	//ssize_t write(int fd,const void *buf,size_t count);
+	//	返回值  >0:成功写入的字节数 -1:失败	count为你要写入的长度，不论是什么都会写入。
+	//int lseek(int handler,long off_set,int fromwhere);
+	//long tell(int handler);
+	// int close(int fd);
+	
+
+// int link(const char *oldpath,const cha *newpath);
+// int unlink(const char * path);
+// int flags = fcntl(int fd,F_GETFL);
+// fcntl(int fd, F_SETFL, int flags);
+
+	DIR *dp = opendir(name);
+	/*struct dirent {
+		int inode;
+		char d_name[256];
+	struct dirent *sdp = readdir(dp)
+
+//int stat(const char *path,struct stat *buf);	
+//	文件大小：buf->st_size	文件类型：buf->st_mode
+//int dup(int oldfd);
+//int dup2(int oldfd,mewfd);
+//int newfd fcntl(int fd,F_DUPFD,0);
+//int execlp(const char *file,const char *arg, ...);
+//int exexl(const char *path,const char *arg, ...);
+//	最后要加上NULL作为结束标志
+// int ftruncate(int fd, off_t length);
+// int truncate(const char *path,off_t length);

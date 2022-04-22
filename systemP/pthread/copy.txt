@@ -1,0 +1,11 @@
+
+	//void *memcpy(void *des,const void *from,size_t n);	绝对复制n个字符，不论有没有\0
+
+	//strcpy(char *des,char *from)	根据\0作为结束判断，会把\0拷贝，des空间不够内存会溢出
+
+	//strncpy(char *des,char *from,size_t n) 拷贝n个字符，不保证des以\0结束；若from较小，des较大，填充\0
+	
+	//sprintf(char *des,const char *format, ...);	拷贝到\0结束，存在des空间不足时 内存泄漏问题
+
+	//snprintf(char *des,size_t size,const char *format,...);	只会拷贝n-1个，自动补充最后的\0		
+	

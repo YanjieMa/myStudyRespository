@@ -1,0 +1,185 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Add	opeartorReload.cpp	/^class Add$/;"	c	file:
+Animal	POLY.cpp	/^class Animal$/;"	c	file:
+Animal	inherit.cpp	/^class Animal$/;"	c	file:
+Building	friend.cpp	/^	Building(){$/;"	f	class:Building
+Building	friend.cpp	/^class Building$/;"	c	file:
+Cat	POLY.cpp	/^class Cat: public Animal$/;"	c	file:
+Chid_Pri	inherit.cpp	/^class Chid_Pri: private Parent$/;"	c	file:
+Chid_Pro	inherit.cpp	/^class Chid_Pro: protected Parent$/;"	c	file:
+Chid_Pub	inherit.cpp	/^class Chid_Pub: public Parent$/;"	c	file:
+Circle	package.cpp	/^class Circle$/;"	c	file:
+DoDrink	POLY.cpp	/^void DoDrink(MakeDrink *md)$/;"	f
+DoSpeek	POLY.cpp	/^void DoSpeek(Animal &p)$/;"	f
+Dog	POLY.cpp	/^class Dog: public Animal$/;"	c	file:
+DrinkWater	POLY.cpp	/^	DrinkWater(string name)$/;"	f	class:DrinkWater
+DrinkWater	POLY.cpp	/^class DrinkWater : public Water$/;"	c	file:
+Goodclass	friend.cpp	/^Goodclass::Goodclass()$/;"	f	class:Goodclass
+Goodclass	friend.cpp	/^class Goodclass$/;"	c	file:
+Goodfunc	friend.cpp	/^Goodfunc::Goodfunc()$/;"	f	class:Goodfunc
+Goodfunc	friend.cpp	/^class Goodfunc$/;"	c	file:
+Home	opeartorReload.cpp	/^	Home()$/;"	f	class:Home
+Home	opeartorReload.cpp	/^	Home(int a, int b)$/;"	f	class:Home
+Home	opeartorReload.cpp	/^class Home$/;"	c	file:
+House	package.cpp	/^	House()$/;"	f	class:House
+House	package.cpp	/^	House(const House &house)$/;"	f	class:House
+House	package.cpp	/^	House(int num,int height):m_num(num),m_height(new int(height)) {cout << "House有参构造函数" << endl;}$/;"	f	class:House
+House	package.cpp	/^class House$/;"	c	file:
+MakeCoffee	POLY.cpp	/^class MakeCoffee: public MakeDrink$/;"	c	file:
+MakeDrink	POLY.cpp	/^class MakeDrink$/;"	c	file:
+MakeTea	POLY.cpp	/^class MakeTea: public MakeDrink$/;"	c	file:
+Parent	inherit.cpp	/^class Parent$/;"	c	file:
+People	opeartorReload.cpp	/^	People(int age, string name)$/;"	f	class:People
+People	opeartorReload.cpp	/^class People$/;"	c	file:
+People	package.cpp	/^class People$/;"	c	file:
+Person	object_this.cpp	/^	Person(){$/;"	f	class:Person
+Person	object_this.cpp	/^	Person(int m_a){$/;"	f	class:Person
+Person	object_this.cpp	/^class Person$/;"	c	file:
+Person	opeartorReload.cpp	/^	Person()$/;"	f	class:Person
+Person	opeartorReload.cpp	/^	Person(int a,int b)$/;"	f	class:Person
+Person	opeartorReload.cpp	/^class Person$/;"	c	file:
+Person	package.cpp	/^class Person$/;"	c	file:
+Print	opeartorReload.cpp	/^class Print$/;"	c	file:
+Test	opeartorReload.cpp	/^	Test(int val)$/;"	f	class:Test
+Test	opeartorReload.cpp	/^class Test$/;"	c	file:
+Tuo	inherit.cpp	/^class Tuo: virtual public Animal $/;"	c	file:
+Water	POLY.cpp	/^	Water()$/;"	f	class:Water
+Water	POLY.cpp	/^class Water$/;"	c	file:
+Yang	inherit.cpp	/^class Yang: virtual public Animal $/;"	c	file:
+Yangtuo	inherit.cpp	/^class Yangtuo: public Yang, public Tuo$/;"	c	file:
+age	inherit.cpp	/^	int age;$/;"	m	class:Animal	file:
+age	opeartorReload.cpp	/^	int age;$/;"	m	class:People	file:
+bedRoom	friend.cpp	/^	string bedRoom;$/;"	m	class:Building	file:
+boil	POLY.cpp	/^	virtual void boil()$/;"	f	class:MakeCoffee
+boil	POLY.cpp	/^	virtual void boil()$/;"	f	class:MakeTea
+brew	POLY.cpp	/^	virtual void brew()$/;"	f	class:MakeCoffee
+brew	POLY.cpp	/^	virtual void brew()$/;"	f	class:MakeTea
+building	friend.cpp	/^	Building * building;$/;"	m	class:Goodfunc	file:
+building	friend.cpp	/^	Building *building;$/;"	m	class:Goodclass	file:
+calcuZC	package.cpp	/^	double calcuZC()$/;"	f	class:Circle
+drink	POLY.cpp	/^	virtual void drink()$/;"	f	class:DrinkWater
+func	inherit.cpp	/^	void func()$/;"	f	class:Chid_Pri
+func	inherit.cpp	/^	void func()$/;"	f	class:Chid_Pro
+func	inherit.cpp	/^	void func()$/;"	f	class:Chid_Pub
+func	object_this.cpp	/^	void func(){\/\/函数不占对象空间，所有函数共享一个函数实例$/;"	f	class:Person
+func	package.cpp	/^	static void func()$/;"	f	class:People
+func1	funcEnhance.cpp	/^int func1(int a, int b, int c)$/;"	f
+func2	funcEnhance.cpp	/^void func2(int a,int)$/;"	f
+func3	funcEnhance.cpp	/^void func3(double d)$/;"	f
+func3	funcEnhance.cpp	/^void func3(int a)$/;"	f
+getM_B	package.cpp	/^	int getM_B()$/;"	f	class:People
+getName	package.cpp	/^	string getName()$/;"	f	class:Person
+getPasswd	package.cpp	/^	int getPasswd()$/;"	f	class:Person
+global_const_val_a	memoryPartition.cpp	/^const int global_const_val_a = 1;$/;"	v
+global_const_val_b	memoryPartition.cpp	/^const int global_const_val_b = 2;$/;"	v
+global_val_a	memoryPartition.cpp	/^int global_val_a = 10;$/;"	v
+global_val_b	memoryPartition.cpp	/^int global_val_b = 20;$/;"	v
+global_val_c	memoryPartition.cpp	/^int global_val_c;$/;"	v
+global_val_d	memoryPartition.cpp	/^int global_val_d;$/;"	v
+goodgay	friend.cpp	/^void goodgay(Building &build)$/;"	f
+m_a	inherit.cpp	/^	int m_a;$/;"	m	class:Parent	file:
+m_a	object_this.cpp	/^	int m_a;\/\/非静态成员变量占对象空间$/;"	m	class:Person	file:
+m_a	opeartorReload.cpp	/^	int m_a;$/;"	m	class:Home	file:
+m_a	opeartorReload.cpp	/^	int m_a;$/;"	m	class:Person	file:
+m_a	package.cpp	/^	static int m_a;$/;"	m	class:People	file:
+m_a	package.cpp	/^int People::m_a = 10;$/;"	m	class:People	file:
+m_aa	object_this.cpp	/^	mutable int m_aa;$/;"	m	class:Person	file:
+m_b	inherit.cpp	/^	int m_b;$/;"	m	class:Parent	file:
+m_b	object_this.cpp	/^	static int m_b;\/\/静态成员变量占对象空间$/;"	m	class:Person	file:
+m_b	object_this.cpp	/^int Person::m_b = 200;$/;"	m	class:Person	file:
+m_b	opeartorReload.cpp	/^	int m_b;$/;"	m	class:Home	file:
+m_b	opeartorReload.cpp	/^	int m_b;$/;"	m	class:Person	file:
+m_b	package.cpp	/^	static int m_b;$/;"	m	class:People	file:
+m_b	package.cpp	/^int People::m_b = 20;$/;"	m	class:People	file:
+m_c	inherit.cpp	/^	int m_c;$/;"	m	class:Parent	file:
+m_car	package.cpp	/^	string m_car;$/;"	m	class:Person	file:
+m_height	package.cpp	/^	int *m_height;$/;"	m	class:House	file:
+m_m	package.cpp	/^	int m_m;$/;"	m	class:People	file:
+m_name	package.cpp	/^	string m_name;$/;"	m	class:Person	file:
+m_num	package.cpp	/^	int m_num;$/;"	m	class:House	file:
+m_passwd	package.cpp	/^	int m_passwd;	$/;"	m	class:Person	file:
+m_r	package.cpp	/^	int m_r;$/;"	m	class:Circle	file:
+m_val	opeartorReload.cpp	/^	int *m_val;$/;"	m	class:Test	file:
+main	POLY.cpp	/^int main(int argc, char **argv)$/;"	f
+main	friend.cpp	/^int main(int argc, char ** argv)$/;"	f
+main	fstream.cpp	/^int main(int argc, char **argv)$/;"	f
+main	funcEnhance.cpp	/^int main()$/;"	f
+main	inherit.cpp	/^int main(int argc, char **argv)$/;"	f
+main	memoryPartition.cpp	/^int main(int argc, char **argv)$/;"	f
+main	new.cpp	/^int main(int argc,char **argv)$/;"	f
+main	object_this.cpp	/^int main(int argc, char ** argv)$/;"	f
+main	opeartorReload.cpp	/^int main(int argc, char **argv)$/;"	f
+main	package.cpp	/^int main(int argc, char **argv)$/;"	f
+main	quote.cpp	/^int main(int argc,char **argv)$/;"	f
+makeD	POLY.cpp	/^	void makeD()$/;"	f	class:MakeDrink
+mySwap	quote.cpp	/^void mySwap(int &a, int &b)$/;"	f
+name	POLY.cpp	/^	string *name;$/;"	m	class:DrinkWater	file:
+name	opeartorReload.cpp	/^	string name;$/;"	m	class:People	file:
+operator !=	opeartorReload.cpp	/^	bool operator!=(People &p)$/;"	f	class:People
+operator ()	opeartorReload.cpp	/^	int operator()(int a,int b)$/;"	f	class:Add
+operator ()	opeartorReload.cpp	/^	void operator()(string str)$/;"	f	class:Print
+operator +	opeartorReload.cpp	/^	Person operator+(const Person &p)$/;"	f	class:Person
+operator +	opeartorReload.cpp	/^Person operator+(const Person &p1,const Person &p2)$/;"	f
+operator +	opeartorReload.cpp	/^Person operator+(const Person &pp,int val)$/;"	f
+operator ++	opeartorReload.cpp	/^	Home &operator++()$/;"	f	class:Home
+operator ++	opeartorReload.cpp	/^	const Home operator++(int )$/;"	f	class:Home
+operator <<	opeartorReload.cpp	/^ostream & operator<<(ostream &out, Home p) \/\/注意：在重载了后置++时，不能使用 Home &p$/;"	f
+operator =	opeartorReload.cpp	/^	Test &operator=(Test &p)$/;"	f	class:Test
+operator ==	opeartorReload.cpp	/^	bool operator==(People &p)$/;"	f	class:People
+operator >>	opeartorReload.cpp	/^istream &operator>>(istream &in,Home &p)$/;"	f
+personANDperson	object_this.cpp	/^	Person &personANDperson(Person p){$/;"	f	class:Person
+pi	package.cpp	/^const double pi = 3.14;$/;"	v
+putCup	POLY.cpp	/^	virtual void putCup()$/;"	f	class:MakeCoffee
+putCup	POLY.cpp	/^	virtual void putCup()$/;"	f	class:MakeTea
+putThing	POLY.cpp	/^	virtual void putThing()$/;"	f	class:MakeCoffee
+putThing	POLY.cpp	/^	virtual void putThing()$/;"	f	class:MakeTea
+readFile	fstream.cpp	/^void readFile()$/;"	f
+setM_B	package.cpp	/^	void setM_B(int b)$/;"	f	class:People
+setName	package.cpp	/^	void setName(string name)$/;"	f	class:Person
+setPasswd	package.cpp	/^	void setPasswd(int passwd)$/;"	f	class:Person
+shouPerson	object_this.cpp	/^	void shouPerson() const{$/;"	f	class:Person
+showClassName	object_this.cpp	/^	void showClassName(){$/;"	f	class:Person
+sittingRoom	friend.cpp	/^	string sittingRoom;$/;"	m	class:Building	file:
+speek	POLY.cpp	/^	virtual void speek()$/;"	f	class:Animal
+speek	POLY.cpp	/^	void speek()$/;"	f	class:Cat	file:
+speek	POLY.cpp	/^	void speek()$/;"	f	class:Dog
+static_func	object_this.cpp	/^	static void static_func(){\/\/静态成员函数不占对象空间$/;"	f	class:Person
+test	memoryPartition.cpp	/^void test()$/;"	f
+test	new.cpp	/^int * test()$/;"	f
+test1	POLY.cpp	/^void test1()$/;"	f
+test1	friend.cpp	/^void test1()$/;"	f
+test1	inherit.cpp	/^void test1()$/;"	f
+test1	object_this.cpp	/^void test1()$/;"	f
+test1	opeartorReload.cpp	/^void test1()$/;"	f
+test1	package.cpp	/^void test1()$/;"	f
+test1	quote.cpp	/^void test1()$/;"	f
+test2	POLY.cpp	/^void test2()$/;"	f
+test2	friend.cpp	/^void test2()$/;"	f
+test2	inherit.cpp	/^void test2()$/;"	f
+test2	new.cpp	/^void test2()$/;"	f
+test2	opeartorReload.cpp	/^void test2()$/;"	f
+test2	package.cpp	/^void test2()$/;"	f
+test3	POLY.cpp	/^void test3()$/;"	f
+test3	friend.cpp	/^void test3()$/;"	f
+test3	opeartorReload.cpp	/^void test3()$/;"	f
+test3	package.cpp	/^void test3()$/;"	f
+test3	quote.cpp	/^int &test3()$/;"	f
+test4	opeartorReload.cpp	/^void test4()$/;"	f
+test4	package.cpp	/^void test4()$/;"	f
+test4	quote.cpp	/^void test4()$/;"	f
+test5	opeartorReload.cpp	/^void test5()$/;"	f
+test5	quote.cpp	/^void test5(const int &a)$/;"	f
+test6	opeartorReload.cpp	/^void test6()$/;"	f
+test7	opeartorReload.cpp	/^void test7()$/;"	f
+visit	friend.cpp	/^void Goodclass::visit()$/;"	f	class:Goodclass
+visit	friend.cpp	/^void Goodfunc::visit()$/;"	f	class:Goodfunc
+writeFile	fstream.cpp	/^void writeFile()$/;"	f
+~DrinkWater	POLY.cpp	/^	~DrinkWater()$/;"	f	class:DrinkWater
+~House	package.cpp	/^	~House()$/;"	f	class:House
+~Test	opeartorReload.cpp	/^	~Test()$/;"	f	class:Test
+~Water	POLY.cpp	/^Water::~Water()$/;"	f	class:Water
